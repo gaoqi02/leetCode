@@ -1,0 +1,17 @@
+# IntelliJ project files
+
+*.error
+*.log
+.idea
+*.iml
+out
+gen
+target/
+output/
+.scss
+.map
+/~/
+~/*
+.DS_Store
+*.uid
+pom.xml.version*
