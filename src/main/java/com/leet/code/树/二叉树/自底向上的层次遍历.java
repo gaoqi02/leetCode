@@ -1,6 +1,5 @@
 package com.leet.code.树.二叉树;
 
-import com.leet.code.ListNode;
 import com.leet.code.树.TreeNode;
 
 import java.util.*;

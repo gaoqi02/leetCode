@@ -6,11 +6,16 @@ package com.leet.code.树;
  */
 public class TreeNode {
     public int val;
+    public String valStr;
     public TreeNode left;
     public TreeNode right;
 
     public TreeNode(int val) {
         this.val = val;
+    }
+
+    public TreeNode(String val) {
+        this.valStr = val;
     }
 
     /** 最大深度 */

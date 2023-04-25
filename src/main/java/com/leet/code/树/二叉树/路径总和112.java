@@ -34,6 +34,4 @@ public class 路径总和112 {
         }
         return hasPathSum(root.left, sum) || hasPathSum(root.right, sum);
     }
-
-
 }

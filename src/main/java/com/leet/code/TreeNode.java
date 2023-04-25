@@ -6,9 +6,13 @@ package com.leet.code;
  */
 public class TreeNode {
 
-    int val;
-    TreeNode left;
-    TreeNode right;
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+
+    public TreeNode(int val) {
+        this.val = val;
+    }
 
     /** 最大深度 */
     private static int maxDepth(TreeNode root) {
