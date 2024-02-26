@@ -48,7 +48,11 @@
 
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.fisco-bcos.java-sdk</groupId>
+            <artifactId>fisco-bcos-java-sdk</artifactId>
+            <version>3.5.0</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-hystrix</artifactId>
@@ -103,13 +107,6 @@
             <artifactId>aspectjweaver</artifactId>
             <version>${aspectj.version}</version>
         </dependency>
-
-        <dependency>
-            <groupId>com.didi.global.growth</groupId>
-            <artifactId>common-utils</artifactId>
-            <version>0.0.5-RELEASE</version>
-        </dependency>
-
         <!-- database -->
         <dependency>
             <groupId>mysql</groupId>
@@ -194,25 +191,7 @@
         </dependency>
 
 
-        <dependency>
-            <groupId>com.didichuxing.qatools</groupId>
-            <artifactId>didilog</artifactId>
-            <version>0.1.0.0-SNAPSHOT</version>
-            <exclusions>
-                <exclusion>
-                    <artifactId>spring-boot-starter-web</artifactId>
-                    <groupId>org.springframework.boot</groupId>
-                </exclusion>
-                <exclusion>
-                    <artifactId>spring-cloud-starter-zipkin</artifactId>
-                    <groupId>org.springframework.cloud</groupId>
-                </exclusion>
-                <exclusion>
-                    <groupId>org.apache.commons</groupId>
-                    <artifactId>commons-lang3</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
+
     </dependencies>
 
     <distributionManagement>
@@ -270,15 +249,8 @@
                     <finalName>${project.artifactId}</finalName>
                     <!--指定main-->
                     <fork>true</fork>
-                    <mainClass>com.didi.global.growth.whatsapp.ApplicationStarter</mainClass>
+                    <mainClass>com.Test</mainClass>
                 </configuration>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>repackage</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
 
             <!-- 忽略无web.xml警告 -->

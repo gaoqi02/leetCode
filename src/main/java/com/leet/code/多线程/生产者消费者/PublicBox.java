@@ -8,7 +8,7 @@ package com.leet.code.多线程.生产者消费者;
 public class PublicBox {
     private int apple = 0;
 
-    public synchronized void increace() {
+    public synchronized void increase() {
         while (apple == 5) {
             try {
                 wait();
@@ -22,7 +22,7 @@ public class PublicBox {
         notify();
     }
 
-    public synchronized void decreace() {
+    public synchronized void decrease() {
         while (apple == 0) {
             try {
                 wait();
@@ -46,7 +46,5 @@ public class PublicBox {
 
         t1.start();
         t2.start();
-
-
     }
 }

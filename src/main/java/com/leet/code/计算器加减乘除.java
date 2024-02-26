@@ -86,7 +86,6 @@ public class 计算器加减乘除 {
 
             if (Character.isDigit(arr[i])) {
                 int tempNum = arr[i] - '0';
-                BigDecimal tempNumBig = new BigDecimal(arr[i] - '0');
                 while (++i < arr.length && Character.isDigit(arr[i])) {
                     tempNum = tempNum * 10 + (arr[i] - '0');
                 }

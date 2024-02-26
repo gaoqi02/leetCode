@@ -23,7 +23,7 @@ public class Consumer implements Runnable {
                 e.printStackTrace();
             }
 
-            box.decreace();
+            box.decrease();
         }
     }
 }

@@ -23,7 +23,7 @@ public class Producer implements Runnable {
                 e.printStackTrace();
             }
 
-            box.increace();
+            box.increase();
         }
 
     }
